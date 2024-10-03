@@ -1,4 +1,4 @@
-**Steps to Create a 3D Scene in Three.js:**
+# Steps to Create a 3D Scene in Three.js 
 
 1. **Add a Scene:**
    - The scene is like the stage where everything will exist. Set a background color to give it a specific look, like space or a plain color.
