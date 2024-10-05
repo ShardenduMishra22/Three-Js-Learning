@@ -36,11 +36,43 @@ const Footer = () => {
             <h2 className="text-2xl font-bold mb-2">Shardendu Mishra</h2>
             <p ref={typedElement} className="text-green-400 text-lg font-semibold h-8"></p>
           </div>
-          <div className="flex justify-center gap-6 whitespace-nowrap"> 
-            <SocialLink to="/leetcode" icon={Code2}>LeetCode</SocialLink>
-            <SocialLink to="/github" icon={Github}>GitHub</SocialLink>
-            <SocialLink to="/twitter" icon={Twitter}>Twitter</SocialLink>
-            <SocialLink to="/instagram" icon={Instagram}>Instagram</SocialLink>
+          <div className="flex justify-center gap-4 whitespace-nowrap"> 
+            <a
+              href="https://leetcode.com/u/ShardenduMishra22/" // Your LeetCode link
+              className="flex items-center px-3 py-2 rounded-full bg-gray-700 hover:bg-gray-600 transition-colors duration-300"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Code2 size={18} className="mr-2" />
+              <span className="hidden sm:inline">LeetCode</span>
+            </a>
+            <a
+              href="https://github.com/shardendumishra22" // Your GitHub link
+              className="flex items-center px-3 py-2 rounded-full bg-gray-700 hover:bg-gray-600 transition-colors duration-300"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Github size={18} className="mr-2" />
+              <span className="hidden sm:inline">GitHub</span>
+            </a>
+            <a
+              href="https://twitter.com/Shardendu_M" // Replace with your Twitter link
+              className="flex items-center px-3 py-2 rounded-full bg-gray-700 hover:bg-gray-600 transition-colors duration-300"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Twitter size={18} className="mr-2" />
+              <span className="hidden sm:inline">Twitter</span>
+            </a>
+            <a
+              href="https://instagram.com/shardendumishra22" // Replace with your Instagram link
+              className="flex items-center px-3 py-2 rounded-full bg-gray-700 hover:bg-gray-600 transition-colors duration-300"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Instagram size={18} className="mr-2" />
+              <span className="hidden sm:inline">Instagram</span>
+            </a>
           </div>
           <div className="text-center ml-20 md:text-right">
             <p>&copy; {year} All rights reserved.</p>
