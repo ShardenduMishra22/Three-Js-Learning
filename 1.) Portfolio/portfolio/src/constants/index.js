@@ -228,7 +228,7 @@ export const navLinks = [
       duration: '2024 - Present',
       title: "At Devforces, I work as a Front End Developer alongside two other interns. This experience has significantly enhanced my front-end skills and taught me the importance of teamwork in a development environment.",
       icon: '/assets/devforces.svg', // Replace with the actual path to the icon if available
-      animation: 'bounce', // You can change this to your preferred animation
+      animation: 'clapping', // You can change this to your preferred animation
     },
     {
       id: 2,
@@ -237,7 +237,7 @@ export const navLinks = [
       duration: '2024 - Present',
       title: "I serve as the Co-Lead of the Primary Development Club at IIIT DWD, where I have helped create the college website and the hackathon website, as well as manage Velocity events.",
       icon: '/assets/velocity.svg', // Replace with the actual path to the icon if available
-      animation: 'fade', // You can change this to your preferred animation
+      animation: 'victory', // You can change this to your preferred animation
     },
   ];
   
