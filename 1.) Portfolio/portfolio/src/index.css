@@ -8,11 +8,6 @@
   scroll-behavior: smooth;
 }
 
-body {
-  background: #010103;
-  font-family: 'General Sans', sans-serif;
-}
-
 @layer utilities {
   .c-space {
     @apply sm:px-10 px-5;
@@ -194,4 +189,8 @@ body {
   100% {
     transform: rotate(0deg);
   }
+}
+body {
+  background: #010103;
+  font-family: 'General Sans', sans-serif;
 }
