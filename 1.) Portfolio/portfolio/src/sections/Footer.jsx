@@ -2,7 +2,6 @@
 import React, { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 import { Twitter, Instagram, Code2, Github } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -87,13 +86,13 @@ const Footer = () => {
 import PropTypes from 'prop-types';
 
 const SocialLink = ({ to, icon: Icon, children }) => (
-  <Link
+  <a
     to={to}
     className="flex items-center px-3 py-2 rounded-full bg-gray-700 hover:bg-gray-600 transition-colors duration-300"
   >
     <Icon size={18} className="mr-2" />
     <span className="hidden sm:inline">{children}</span>
-  </Link>
+  </a>
 );
 
 SocialLink.propTypes = {

@@ -8,7 +8,21 @@
   scroll-behavior: smooth;
 }
 
+body {
+  background: #010103;
+  font-family: 'General Sans', sans-serif;
+}
+
+.grid-container img{
+  border: 2px solid #333; /* example border */
+  background-color: #1a1a1a; /* example background */
+  padding: 20px;
+  border-radius: 40px; /* This will make the corners rounded */
+  overflow:auto;
+}
+
 @layer utilities {
+
   .c-space {
     @apply sm:px-10 px-5;
   }
@@ -39,7 +53,7 @@
 
   /* button component */
   .btn {
-    @apply flex gap-4 items-center justify-center cursor-pointer p-3 rounded-md bg-black-300  transition-all active:scale-95 text-white mx-auto;
+    @apply flex gap-4 items-center justify-center p-3 rounded-md bg-black-300  transition-all active:scale-95 text-white mx-auto;
   }
 
   .btn-ping {
@@ -52,12 +66,12 @@
 
   /* hero section */
   .hero_tag {
-    @apply text-center xl:text-6xl md:text-5xl sm:text-4xl text-3xl font-generalsans font-black !leading-normal;
+    @apply text-center xl:text-5xl md:text-5xl sm:text-4xl text-3xl font-generalsans font-black !leading-normal;
   }
 
   /* about section */
   .grid-container {
-    @apply w-full h-full border border-black-300 bg-black-200 rounded-lg sm:p-7 p-4 flex flex-col gap-5;
+    @apply w-full h-full border border-black-300 bg-black-200 rounded-lg p-4 sm:p-5; /* Reduced padding */
   }
 
   .grid-headtext {
@@ -68,13 +82,10 @@
     @apply text-[#afb0b6] text-base font-generalsans;
   }
 
-  .copy-container {
-    @apply cursor-pointer flex justify-center items-center gap-2;
-  }
 
   /* projects section  */
   .arrow-btn {
-    @apply w-10 h-10 p-3 cursor-pointer active:scale-95 transition-all rounded-full arrow-gradient;
+    @apply w-10 h-10 p-3 active:scale-95 transition-all rounded-full arrow-gradient;
   }
 
   .tech-logo {
@@ -108,7 +119,7 @@
   }
 
   .work-content_container {
-    @apply grid grid-cols-[auto_1fr] items-start gap-5  transition-all ease-in-out duration-500 cursor-pointer hover:bg-black-300 rounded-lg sm:px-5 px-2.5;
+    @apply grid grid-cols-[auto_1fr] items-start gap-5  transition-all ease-in-out duration-500 hover:bg-black-300 rounded-lg sm:px-5 px-2.5;
   }
 
   .work-content_logo {
@@ -190,7 +201,22 @@
     transform: rotate(0deg);
   }
 }
-body {
-  background: #010103;
-  font-family: 'General Sans', sans-serif;
+
+.fixed-size {
+  width: 400px; /* Set a fixed width */
+  height: 600px; /* Set a fixed height */
+  overflow: hidden; /* Prevent overflow */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space the elements evenly */
+}
+
+.fixed-size .flex-grow {
+  flex-grow: 1; /* Allow the project details to grow */
+}
+
+.arrow-btn {
+  cursor: pointer;
+  background-color: transparent;
+  border: none; /* Optional: remove button border */
 }

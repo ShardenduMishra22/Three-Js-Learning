@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
 import PropTypes from 'prop-types';
-import { Link } from "react-router-dom";
 import { navLinks } from "../constants/index.js";
 import { Menu, X, Github, Home, User, Briefcase, Mail } from "lucide-react";
 import axios from 'axios';
@@ -26,14 +25,14 @@ const NavItems = ({ onClick = () => {} }) => {
     <ul className="flex flex-col sm:flex-row sm:space-x-6">
       {navLinks.map((item) => (
         <li key={item.id}>
-          <Link
-            to={item.href}
+          <a
+            href={item.href} // Changed 'to' to 'href'
             onClick={onClick}
             className="flex items-center text-gray-300 hover:text-yellow-500 transition-colors py-2 px-3 rounded-md hover:bg-gray-700 text-sm font-medium"
           >
             {getIcon(item.name)}
             {item.name}
-          </Link>
+          </a>
         </li>
       ))}
       <li>
